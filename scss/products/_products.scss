@@ -1,0 +1,122 @@
+@import '../general/index.scss';
+
+.main {
+    margin-top: 30px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        @include font(36px, 400, 44px);
+        margin: 0 110px 30px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 42px;
+        column-gap: 30px;
+        margin-bottom: 180px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 290px;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: $white;
+    }
+
+    &__card-title {
+        @include font(24px, 500, 30px);
+        padding: 0 18px;
+    }
+
+    &__card-link {
+        color: $black;
+    }
+
+    &__card-image {
+        padding: 0 16px;
+    }
+
+    &__card-weight {
+        @include font(18px, 400, 22px);
+        color: $gray;
+        margin-left: 16px;
+
+    }
+
+    &__card-buy {
+        border-top: 0.5px solid $gray;
+        padding: 10px 10px 10px 16px;
+    }
+
+    &__card-price {
+        @include font(24px, 700, 30px);
+    }
+
+    &__card-btn {
+        @include font(24px, 500, 30px);
+        color: $white;
+        width: 140px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $orange;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 50px 110px 60px;
+    }
+
+    &__description-tittle {
+        @include font(24px, 700, 30px);
+        color: $gray;
+    }
+
+    &__description-text {
+        @include font(18px,400, 18px);
+        color: $gray;
+    }
+
+    &__description-item {
+        list-style: disc;
+        margin-left: 30px;
+        color: $gray;
+        @include font(18px,400, 18px);
+    }
+
+    &__description-btn {
+        @include font(24px, 400, 24px);
+        color: $orange;
+    }
+
+    &__description-icon {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .main {
+        &__title {
+            flex-direction: column;
+            margin: 0 50px 30px;
+        }
+
+        &__list {
+            width: 100%;
+        }
+
+        &__container {
+            margin-bottom: 0;
+        }
+
+        &__description {
+            margin: 50px 50px 60px;
+        }
+    }
+}

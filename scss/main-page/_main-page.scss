@@ -1,0 +1,175 @@
+@import '../general/index.scss';
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 110px;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    &__category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 23px;
+    }
+
+    &__link {
+        position: relative;
+    }
+
+    &_text {
+        @include font(24px, 500, 30px);
+        color: $white;
+        position: absolute;
+        bottom: 6px;
+        left: 6px;
+    }
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__container-card {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__card-title {
+        padding: 0 16px;
+    }
+
+    &__new-products,
+    &__card-title {
+        @include font(24px, 500, 30px);
+    }
+
+    &__subtitle {
+        width: 100%;
+    }
+
+    &__card--link-item {
+        color: $gray;
+    } .link-item {
+            text-decoration: underline;
+          }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        max-width: 290px;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: $white;
+    }
+
+    &__card-link {
+        color: $black;
+    }
+
+    &__card-image {
+        padding: 0 16px;
+    }
+
+    &__card-weight {
+        @include font(18px, 400, 22px);
+        color: $gray;
+        padding: 0 16px;
+    }
+
+    &__card-buy {
+        border-top: 0.5px solid $gray;
+        padding: 10px 10px 10px 16px;
+    }
+
+    &__card-price {
+        @include font(24px, 700, 30px);
+    }
+
+    &__card-btn {
+        @include font(24px, 500, 30px);
+        color: $white;
+        width: 140px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $orange;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 50px 0 60px;
+    }
+
+    &__description-tittle {
+        @include font(24px, 700, 30px);
+        color: $gray;
+    }
+
+    &__description-text {
+        @include font(18px,400, 18px);
+        color: $gray;
+    }
+
+    &__description-item {
+        list-style: disc;
+        margin-left: 30px;
+        color: $gray;
+        @include font(18px,400, 18px);
+    }
+
+    &__description-btn {
+        @include font(24px, 400, 24px);
+        color: $orange;
+    }
+
+    &__description-icon {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    .main {
+        margin: 0 20px;
+
+        &__title {
+            display: none;
+        }
+
+        &__category {
+            margin-top: 30px;
+        }
+
+        &__link--corn-dog,
+        &__link--corn-dog,
+        &__link--eel,
+        &__link--eel {
+            width: 100%;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+        &__container-card {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+    }
+}
+

@@ -1,0 +1,154 @@
+@import '../general/index.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    &__logo {
+        display: none;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__contacts {
+        border: none;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 56px;
+    margin: 0 auto;
+    max-width: 760px;
+    width: 100%;
+
+    &__title {
+        @include font(24px, 500, 30px);
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+    &__fields-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    &__tel,
+    &__str-home,
+    &__home {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__home {
+        display: flex;
+        gap: 30px;
+    }
+
+
+    &__item {
+        background-color: $white;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    &__container-input {
+        display: flex;
+        border-radius: 5px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    &__item-radio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background-color: $white;
+        padding: 10px 26px;
+        width: 50%;
+
+        &--active {
+            background-color: $light-orange;
+            color: $white;
+        }
+    }
+
+    &__input-radio {
+        display: none;
+    }
+
+    &__container-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+
+        &:first-child &-icon {
+            width: 14px;
+        }
+    }
+
+    &__text {
+        @include font(18px, 500, inherit);
+    }
+
+    &__button-checkout {
+        width: 100%;
+        background-color: $orange;
+        color: $white;
+        height: 46px;
+        border-radius: 5px;
+        @include font(18px, 500, 22px);
+    }
+
+}
+
+@media (max-width: 390px) {
+    .aside,
+    .navigation {
+        display: none;
+    }
+
+    .form {
+        padding: 28px 26px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .form {
+        &__container {
+            flex-direction: column;
+        }
+    }
+}
