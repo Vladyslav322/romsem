@@ -119,6 +119,7 @@ legend {
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "DIN Pro";
   src: url("../../fonts/dinpro-bold.eot");
@@ -126,6 +127,7 @@ legend {
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "DIN Pro";
   src: url("../../fonts/dinpro-light.eot");
@@ -133,6 +135,7 @@ legend {
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "DIN Pro";
   src: url("../../fonts/dinpro.eot");
@@ -140,6 +143,7 @@ legend {
   font-weight: normal;
   font-style: normal;
 }
+
 .aside__address, .aside__promotion-link {
   display: flex;
   justify-content: center;
