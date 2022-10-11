@@ -11,8 +11,7 @@
     }
 
     &__contacts {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         padding: 6px 14px 8px;
         text-align: center;
         border-right: 0.5px solid $gray;
@@ -28,9 +27,9 @@
     }
 
     &__work-time {
+        @include font(14px, 500, 17px);
         display: flex;
         margin-top: 5px;
-        @include font(14px, 500, 17px);
         color: $gray;
     }
 
@@ -47,9 +46,7 @@
     }
 
     &__location {
-        display: flex;
-        flex-direction: column;
-
+        @extend %flexColumn;
         margin-left: 14px;
     }
 
@@ -69,9 +66,9 @@
     }
 
     &__nav-link {
+        @include font(18px, 400, 22px);
         display: flex;
         gap: 10px;
-        @include font(18px, 400, 22px);
     }
 
     &__link-item {

@@ -1,43 +1,43 @@
 @font-face {
     font-family: 'DIN Pro';
-    src: url('../../fonts/dinpro-medium.eot');
     src: local('DIN Pro Medium'), local('DINPro-Medium'),
-        url('../../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/DINPro-Medium.woff') format('woff'),
-        url('../../fonts/DINPro-Medium.ttf') format('truetype');
+        url('../../fonts/dinpro-medium.eot') format('eot'),
+        url('../../fonts/dinpro-medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/dinpro-medium.woff') format('woff'),
+        url('../../fonts/dinpro-medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('../../fonts/DINPro-Bold.eot');
     src: local('DIN Pro Bold'), local('DINPro-Bold'),
-    url('../../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/DINPro-Bold.woff') format('woff'),
-    url('../../fonts/DINPro-Bold.ttf') format('truetype');
+        url('../../fonts/dinpro-bold.eot') format('eot'),
+        url('../../fonts/dinpro-bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/dinpro-bold.woff') format('woff'),
+        url('../../fonts/dinpro-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('../../fonts/DINPro-Light.eot');
     src: local('DIN Pro Light'), local('DINPro-Light'),
-    url('../../fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/DINPro-Light.woff') format('woff'),
-    url('../../fonts/DINPro-Light.ttf') format('truetype');
+        url('../../fonts/dinpro-light.eot') format('eot'),
+        url('../../fonts/dinpro-light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/dinpro-light.woff') format('woff'),
+        url('../../fonts/dinpro-light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('../../fonts/DINPro.eot');
     src: local('DIN Pro'), local('DINPro'),
-    url('../../fonts/DINPro.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/DINPro.woff') format('woff'),
-    url('../../fonts/DINPro.ttf') format('truetype');
+        url('../../fonts/dinpro.eot') format('eot'),
+        url('../../fonts/dinpro.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/dinpro.woff') format('woff'),
+        url('../../fonts/dinpro.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

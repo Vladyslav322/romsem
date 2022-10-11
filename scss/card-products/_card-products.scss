@@ -1,8 +1,7 @@
 @import '../general/index.scss';
 
 .main {
-    display: flex;
-    flex-direction: column;
+    @extend %flexColumn;
     gap: 30px;
 
     &__container-button {
@@ -23,8 +22,7 @@
     }
 
     &__container-card {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         margin-left: 30px;
     }
 
@@ -48,20 +46,12 @@
         @include font(24px, 700, 30px);
     }
 
-    &__btn-minus {
-
-    }
-
     &__minus-icon {
         padding-top: 4px;
     }
 
     &__btn-amount {
         @include font(36px, 700, 45px);
-    }
-
-    &__btn-plus {
-
     }
 
     &__card-subtitle {
@@ -76,20 +66,16 @@
 
     &__buy {
         @include font(24px, 500, 30px);
+        @include wh(140px, 40px);
+        @extend %flexCenter;
         color: $white;
-        width: 140px;
-        height: 40px;
         border-radius: 5px;
         background-color: $orange;
         margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     &__container-cards {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         align-items: center;
         gap: 30px;
     }
@@ -105,8 +91,7 @@
     }
 
     &__product {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         align-items: center;
         gap: 10px;
         margin-bottom: 30px;

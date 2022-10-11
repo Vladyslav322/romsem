@@ -20,8 +20,7 @@
     }
 
     &__card {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         width: 290px;
         justify-content: space-between;
         gap: 20px;
@@ -60,15 +59,13 @@
     &__card-btn {
         @include font(24px, 500, 30px);
         color: $white;
-        width: 140px;
-        height: 40px;
+        @include wh(140px, 40px);
         border-radius: 5px;
         background-color: $orange;
     }
 
     &__description {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         gap: 10px;
         margin: 50px 110px 60px;
     }

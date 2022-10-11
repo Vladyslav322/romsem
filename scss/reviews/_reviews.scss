@@ -2,9 +2,8 @@
 
 
 .main {
+    @extend %flexColumn;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     gap: 30px;
     margin-top: 60px;
     background-color: $light-gray;
@@ -34,8 +33,7 @@
     }
 
     &__reviews {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         background-color: $white;
         border-radius: 5px;
         gap: 20px;

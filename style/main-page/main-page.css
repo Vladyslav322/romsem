@@ -114,55 +114,55 @@ legend {
 
 @font-face {
   font-family: "DIN Pro";
-  src: url("../../fonts/dinpro-medium.eot");
-  src: local("DIN Pro Medium"), local("DINPro-Medium"), url("../../fonts/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/DINPro-Medium.woff") format("woff"), url("../../fonts/DINPro-Medium.ttf") format("truetype");
+  src: local("DIN Pro Medium"), local("DINPro-Medium"), url("../../fonts/dinpro-medium.eot") format("eot"), url("../../fonts/dinpro-medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/dinpro-medium.woff") format("woff"), url("../../fonts/dinpro-medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "DIN Pro";
-  src: url("../../fonts/DINPro-Bold.eot");
-  src: local("DIN Pro Bold"), local("DINPro-Bold"), url("../../fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/DINPro-Bold.woff") format("woff"), url("../../fonts/DINPro-Bold.ttf") format("truetype");
+  src: local("DIN Pro Bold"), local("DINPro-Bold"), url("../../fonts/dinpro-bold.eot") format("eot"), url("../../fonts/dinpro-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/dinpro-bold.woff") format("woff"), url("../../fonts/dinpro-bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "DIN Pro";
-  src: url("../../fonts/DINPro-Light.eot");
-  src: local("DIN Pro Light"), local("DINPro-Light"), url("../../fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/DINPro-Light.woff") format("woff"), url("../../fonts/DINPro-Light.ttf") format("truetype");
+  src: local("DIN Pro Light"), local("DINPro-Light"), url("../../fonts/dinpro-light.eot") format("eot"), url("../../fonts/dinpro-light.eot?#iefix") format("embedded-opentype"), url("../../fonts/dinpro-light.woff") format("woff"), url("../../fonts/dinpro-light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "DIN Pro";
-  src: url("../../fonts/DINPro.eot");
-  src: local("DIN Pro"), local("DINPro"), url("../../fonts/DINPro.eot?#iefix") format("embedded-opentype"), url("../../fonts/DINPro.woff") format("woff"), url("../../fonts/DINPro.ttf") format("truetype");
+  src: local("DIN Pro"), local("DINPro"), url("../../fonts/dinpro.eot") format("eot"), url("../../fonts/dinpro.eot?#iefix") format("embedded-opentype"), url("../../fonts/dinpro.woff") format("woff"), url("../../fonts/dinpro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-.wrapper {
-  font-family: "DIN Pro", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
+.main__products, .main__title, .aside__address, .aside__promotion-link {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.main__description, .main__card, .main, .footer__container-numbers, .footer__container-social, .footer__link, .aside, .header__location, .header__contacts, .navigation__logo-container, .navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
   width: 100%;
   height: 100%;
+  font-family: "DIN Pro", sans-serif;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   max-width: 1720px;
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
   width: 180px;
   height: 100%;
   margin-right: 40px;
 }
 .navigation__logo-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #A4ACAD;
   padding: 30px;
@@ -207,8 +207,6 @@ legend {
   display: none;
 }
 .header__contacts {
-  display: flex;
-  flex-direction: column;
   padding: 6px 14px 8px;
   text-align: center;
   border-right: 0.5px solid #A4ACAD;
@@ -225,11 +223,11 @@ legend {
   line-height: 18px;
 }
 .header__work-time {
-  display: flex;
-  margin-top: 5px;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
+  display: flex;
+  margin-top: 5px;
   color: #A4ACAD;
 }
 .header__work-icon {
@@ -243,8 +241,6 @@ legend {
   align-items: center;
 }
 .header__location {
-  display: flex;
-  flex-direction: column;
   margin-left: 14px;
 }
 .header__city-label {
@@ -264,11 +260,11 @@ legend {
   gap: 70px;
 }
 .header__nav-link {
-  display: flex;
-  gap: 10px;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  display: flex;
+  gap: 10px;
 }
 .header__link-item {
   color: #000000;
@@ -299,8 +295,6 @@ legend {
   }
 }
 .aside {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
   width: 290px;
   margin: 55px 0 20px 40px;
@@ -322,22 +316,17 @@ legend {
   line-height: 22px;
   color: #A4ACAD;
 }
-.aside__promotion {
+.aside__promotion-link {
   width: 290px;
   height: 40px;
   background-color: #FF9846;
+  color: #F2F2F2;
   border-radius: 0 0 5px 5px;
   margin-top: 26px;
 }
-.aside__promotion-link {
-  color: #F2F2F2;
-}
 .aside__address {
   position: relative;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
   background-color: #F2F2F2;
 }
@@ -376,8 +365,6 @@ legend {
   margin-bottom: 60px;
 }
 .footer__link {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
   width: 100%;
 }
@@ -388,12 +375,10 @@ legend {
   color: #000000;
 }
 .footer__container-social {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
   gap: 10px;
   padding: 30px 20px;
-  height: 100%;
-  width: 100%;
 }
 .footer__label {
   font-size: 18px;
@@ -414,13 +399,11 @@ legend {
   padding: 6px;
 }
 .footer__container-numbers {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
   color: #A4ACAD;
   padding: 30px 20px;
   gap: 10px;
-  height: 100%;
-  width: 100%;
 }
 
 @media (max-width: 390px) {
@@ -437,16 +420,11 @@ legend {
   }
 }
 .main {
-  display: flex;
-  flex-direction: column;
   gap: 30px;
   margin: 0 110px;
 }
 .main__title {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-top: 30px;
   gap: 10px;
 }
@@ -469,10 +447,7 @@ legend {
   left: 6px;
 }
 .main__products {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
 }
 .main__container-card {
@@ -498,8 +473,6 @@ legend {
   text-decoration: underline;
 }
 .main__card {
-  display: flex;
-  flex-direction: column;
   max-width: 290px;
   justify-content: space-between;
   gap: 20px;
@@ -538,8 +511,6 @@ legend {
   background-color: #F46D40;
 }
 .main__description {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
   margin: 50px 0 60px;
 }

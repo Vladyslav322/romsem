@@ -1,13 +1,10 @@
 .navigation {
-    display: flex;
-    flex-direction: column;
-    width: 180px;
-    height: 100%;
+    @extend %flexColumn;
+    @include wh(180px, 100%);
     margin-right: 40px;
 
     &__logo-container {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         align-items: center;
         border-bottom: 1px solid $gray;
         padding: 30px;

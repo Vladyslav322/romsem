@@ -4,15 +4,27 @@
     line-height: $lh;
 }
 
-.wrapper {
-    font-family: 'DIN Pro', sans-serif;
-    font-size: $s;
-    font-weight: 400;
-    line-height: 22px;
+@mixin wh ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+%flexCenter {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    align-items: center;
+}
+
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    @include wh(100%, 100%);
+    font-family: 'DIN Pro', sans-serif;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1720px;
 }

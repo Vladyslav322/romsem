@@ -21,8 +21,7 @@
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
+    @extend %flexColumn;
     justify-content: center;
     gap: 40px;
     padding: 56px;
@@ -42,8 +41,7 @@
     }
 
     &__fields-container {
-        display: flex;
-        flex-direction: column;
+        @extend %flexColumn;
         gap: 30px;
         width: 100%;
     }
@@ -76,9 +74,7 @@
     }
 
     &__item-radio {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flexCenter;
         gap: 12px;
         background-color: $white;
         padding: 10px 26px;
@@ -108,11 +104,8 @@
     }
 
     &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20px;
-        width: 20px;
+        @extend %flexCenter;
+        @include wh(20px, 20px);
 
         &:first-child &-icon {
             width: 14px;
@@ -124,14 +117,12 @@
     }
 
     &__button-checkout {
-        width: 100%;
+        @include wh(100%, 46px);
+        @include font(18px, 500, 22px);
         background-color: $orange;
         color: $white;
-        height: 46px;
         border-radius: 5px;
-        @include font(18px, 500, 22px);
     }
-
 }
 
 @media (max-width: 390px) {

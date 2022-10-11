@@ -1,6 +1,5 @@
 .aside {
-    display: flex;
-    flex-direction: column;
+    @extend %flexColumn;
     gap: 20px;
     width: 290px;
     margin: 55px 0 20px 40px;
@@ -21,24 +20,19 @@
         color: $gray;
     }
 
-    &__promotion {
-        width: 290px;
-        height: 40px;
+    &__promotion-link {
+        @extend %flexCenter;
+        @include wh(290px, 40px);
         background-color: $light-orange;
+        color: $light-gray;
         border-radius: 0 0 5px 5px;
         margin-top: 26px;
     }
 
-    &__promotion-link {
-        color: $light-gray;
-    }
-
     &__address {
+        @extend %flexCenter;
         position: relative;
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 10px;
         background-color: $light-gray;
     }
